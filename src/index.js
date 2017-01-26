@@ -29,6 +29,8 @@ module.exports = ( config ) => {
 					await channel.bindExchange( def.target, def.exchange, def.pattern );
 				}
 			}
+
+			return topology;
 		}
 	};
 };
