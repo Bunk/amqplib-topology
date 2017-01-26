@@ -22,7 +22,7 @@
   "dependencies": {
     "amqplib": "^0.5.1",
     "lodash": "^4.17.2",
-    "rabbit-topology": "^1.0.0"
+    "rabbit-topology": "^2.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
