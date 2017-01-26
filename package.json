@@ -1,6 +1,6 @@
 {
   "name": "amqplib-topology",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Generate a RabbitMQ topology with amqplib",
   "main": "lib/index.js",
   "scripts": {
