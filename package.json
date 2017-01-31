@@ -25,6 +25,7 @@
     "rabbit-topology": "^2.0.0"
   },
   "devDependencies": {
+    "amqplib-mocks": "^1.0.0",
     "babel-cli": "^6.18.0",
     "babel-eslint": "^7.1.1",
     "babel-plugin-istanbul": "^3.0.0",
