@@ -1,14 +1,12 @@
 const _ = require( "lodash" );
-const amqp = require( "amqplib" );
 const parser = require( "rabbit-topology" );
 
-module.exports = ( config ) => {
+module.exports = ( connection ) => {
 	return {
 		async assert( dsl ) {
 			const topology = parser.parse( dsl );
 
-			const conn = await amqp.connect( config );
-			const channel = await conn.createChannel();
+			const channel = await connection.createChannel();
 
 			for ( const def of _.values( topology.exchanges ) ) {
 				const opt = _.omit( def, [ "name", "type" ] );
